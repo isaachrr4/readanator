@@ -26,7 +26,7 @@ const questions = [
       {
           type: "input",
           message: "add user story information",
-          name: "user story"
+          name: "userstory"
       },
 
       {
@@ -49,7 +49,8 @@ const questions = [
     ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFile( data) {
+    const fileName = "./dist/README.md"
     fs.writeFile(fileName +'.md', generateMarkdown(data), function(err) {
 
         if (err) {
@@ -63,7 +64,7 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inq.prompt(questions).then((fileName, data) => writeToFile(fileName, data));
+    inq.prompt(questions).then(( data) => writeToFile( data));
 }
 
 

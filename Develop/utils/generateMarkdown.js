@@ -41,7 +41,7 @@ function renderLicenseSection(license) {
   }
 
   else if (license === "MIT") {
-    return "MIt License"
+    return "MIT License"
   }
 
   if (license === "Apache") {
@@ -60,10 +60,10 @@ ${data.description}
 *[contributors]
 *[user story]
 
-# Usage 
-${data.usage}
-# Contributiors
-${data.contribution}
+# User Story 
+${data.userstory}
+# Contributors
+${data.contributors}
 # Test 
 ${data.test}
 #Features
